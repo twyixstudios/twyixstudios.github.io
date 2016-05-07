@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+   <title>Box'd Out</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <script src="TemplateData/UnityProgress.js"></script>
+</head>
+<body>
+
+<style media="screen" type="text/css">
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+body { 
+background-color: #5E5E5E;
+}
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:4px !important; 
+    padding-bottom:0 !important;
+    height: 80px;
+	
+}
+.navbar {
+	min-height:28px !important;
+	//background-image:url(../img/bg.png);
+	background-color:#F1F3F6;
+	font-family: 'Oswald', sans-serif !important; 
+}
+.navbar-brand > img {
+      max-height: 100%;
+      height: 100%;
+      -o-object-fit: contain;
+      object-fit: contain;
+}
+
+</style>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../index.html"> <img class="img-responsive img-rounded center-block" src="../img/twyixstudioslogo.png" alt=""></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href ="../about.html" style="font-size: 24px; font-weight:500; line-height:70px; color:#5E5E5E;">About</a>
+                    </li>
+                    <li>
+                        <a href="mailto:twyixstudios@gmail.com" style="font-size: 24px; font-weight:500; line-height:70px; color:#5E5E5E;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+		
+        <div class="row vertical-center">
+             <div class="template">
+                <p class="header"><span>Unity WebGL Player | </span>Box'd Out</p>
+                <div class="template-wrap clear">
+                  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="720px" width="480px"></canvas>
+                  <br>
+                  <div class="logo"></div>
+                  <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+                  <div class="title">Box'd Out</div>
+                </div>
+                <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+                <script type='text/javascript'>
+				  var Module = {
+					TOTAL_MEMORY: 268435456,
+					errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+					compatibilitycheck: null,
+					dataUrl: "Release/game.data",
+					codeUrl: "Release/game.js",
+					memUrl: "Release/game.mem",
+				  };
+              </script>
+        </div>    
+        
+       
+
+    </div>
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://twitter.com/twyixstudios">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/BoxdOut/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted" style="text-align:center">Copyright &copy; Twyix Studios LLC 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Release/UnityLoader.js"></script>
+</body>
+</html>
