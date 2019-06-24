@@ -18,7 +18,7 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <script src="TemplateData/UnityProgress.js"></script>
 </head>
-<body>
+<body class="pt-5">
 
 <style media="screen" type="text/css">
 .vertical-center {
@@ -28,14 +28,14 @@
   display: flex;
   align-items: center;
 }
-body { 
+body {
 background-color: #5E5E5E;
 }
 .navbar-nav > li > a, .navbar-brand {
-    padding-top:4px !important; 
-    padding-bottom:0 !important;
-    height: 80px;
-	
+    padding-top:4px !important;
+    padding-bottom:0px !important;
+    height: 40px;
+    margin-bottom: 20px;
 }
 .navbar {
 	min-height:28px !important;
@@ -48,6 +48,9 @@ background-color: #5E5E5E;
       height: 100%;
       -o-object-fit: contain;
       object-fit: contain;
+}
+.container {
+
 }
 
 </style>
@@ -87,7 +90,7 @@ background-color: #5E5E5E;
         <div class="row vertical-center">
              <div class="template">
                 <p class="header"><span>Unity WebGL Player | </span>Box'd Out</p>
-                <div class="template-wrap clear">
+                <div class="template-wrap clear" style="padding-top: 270px;">
                   <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="720px" width="480px"></canvas>
                   <br>
                   <div class="logo"></div>
@@ -115,22 +118,6 @@ background-color: #5E5E5E;
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
-                        <li>
-                            <a href="https://twitter.com/twyixstudios">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/BoxdOut/">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
                     </ul>
                     <p class="copyright text-muted" style="text-align:center">Copyright &copy; Twyix Studios LLC 2016</p>
                 </div>
